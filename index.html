@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+    />
+    <title>Random Quote Generator</title>
+    <style>
+      blockquote {
+        font-size: 1.4em;
+        width: 60%;
+        margin: 50px auto;
+        font-family: Open Sans;
+        font-style: italic;
+        color: #555555;
+        padding: 1.2em 30px 1.2em 75px;
+        border-left: 8px solid #78c0a8;
+        line-height: 1.6;
+        position: relative;
+        background: #ededed;
+      }
+
+      blockquote::before {
+        font-family: Arial;
+        content: "\201C";
+        color: #78c0a8;
+        font-size: 4em;
+        position: absolute;
+        left: 10px;
+        top: -10px;
+      }
+
+      blockquote::after {
+        content: "";
+      }
+
+      blockquote span {
+        display: block;
+        color: #333333;
+        font-style: normal;
+        font-weight: bold;
+        margin-top: 1em;
+      }
+      .text-center {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-center">
+        <h3>Generate Random Quote</h3>
+        <button class="btn">Generate</button>
+        <blockquote></blockquote>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
